@@ -23,7 +23,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -229,6 +230,14 @@ input, select, textarea {
 			width: max-content;
 			padding-bottom: 0.5rem;
 			margin: 0 0 2rem 0;
+		}
+
+		h1.minor, h2.minor, h3.minor, h4.minor, h5.minor, h6.minor {
+			border-bottom: solid 1px #ffffff;
+			padding-bottom: 0.5rem;
+			margin: 0 0 2rem 0;
+			word-wrap: break-word;
+			width: 100%;
 		}
 
 	h1 {
