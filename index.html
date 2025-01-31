@@ -715,7 +715,25 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- BG -->
 			<div id="bg"></div>
+			<script>
+				const date = new Date();
+				const month = date.getMonth() + 1; // Months are zero-indexed, so we add 1
+				const bg_image = !(month <= 4 || month >= 9) ? "bg.jpg" : "bg_zomer.jpg";
 
+				const element = document.getElementById('bg');
+		
+				// Create a new style element
+				const style = document.createElement('style');
+				document.head.appendChild(style);
+
+				// Add CSS rules for ::after pseudo-element
+				
+				style.sheet.insertRule(`
+					#bg::after {
+						background-image: url("images/${bg_image}");
+					}
+				`);
+    		</script>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
