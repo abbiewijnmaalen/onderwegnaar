@@ -718,7 +718,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script>
 				const date = new Date();
 				const month = date.getMonth() + 1; // Months are zero-indexed, so we add 1
-				const bg_image = !(month <= 4 || month >= 9) ? "bg.jpg" : "bg_zomer.jpg";
+				const bg_image = (month <= 4 || month >= 9) ? "bg.jpg" : "bg_zomer.jpg";
 
 				const element = document.getElementById('bg');
 		
